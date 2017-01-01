@@ -1,25 +1,31 @@
+
 package main
 
 import
 
-"fmt"
-
-func topla( x int, y int)(int) {
-
-	return x + y
-
-}
+	"fmt"
 
 func main(){
-	var number int
-	var number2 int
-	var total int
-	fmt.Println("bir sayı söle ")
-	fmt.Scanln(&number)
-	fmt.Println("ikinci bir sayı daha")
-	fmt.Scanln(&number2)
-	total = topla(number, number2)
-	fmt.Println(total)
+
+	var sayı int
+	var sayı1 int
+	fmt.Println("1 ile 10 arsında bir sayı söyle")
 
 
+	if (0 <= sayı )&&(sayı<=10){
+		fmt.Scanln(&sayı)
+		fmt.Println("bu sayıyı hangi sayıyla çarpmamı istersin")
+		fmt.Scanln(&sayı1)
+		var sonuc int
+		sonuc = carp(sayı,sayı1)
+		fmt.Printf("bu iki sayının çarpımının sonucu %d dir", sonuc)
+	}else if ( sayı<= 10)&& (sayı==0){
+
+		fmt.Println("lütfen 1 ile 10 arasında bir raka söyleyin")
+
+	}
 }
+
+func carp(x int, y int)(int){
+
+	return x*y }
